@@ -1,0 +1,37 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <!-- META Title & Description -->
+  <title>Comment App</title>
+  <meta name="description" content="New Comment App">
+    <!-- META Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favorite icon -->
+  <!-- <link rel="shortcut icon" href="#.ico"> -->
+    <!-- Styles -->
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+
+  <script src="js/#.js"></script>
+</head>
+<body>
+
+  <div class="frame">
+     <h1 class="title">Comment App</h1>
+     <form id="form" action="#">
+       <label for="name" class="label">Name</label><br>
+       <input id="name" class="field" type="text" placeholder="Username"><br>
+       <label for="message" class="label">Message</label><br>
+       <textarea id="message" class="field" placeholder="Your message"></textarea><br>
+       <button type="button" onclick="displayInfo()" class="submit">Submit</button>
+     </form>
+    </div>
+
+  <section id="comments" class="comments"></section>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
