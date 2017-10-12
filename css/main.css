@@ -1,86 +1,112 @@
-* { font-family: Arial, sans-serif; box-sizing: border-box; }
+* {
+ box-sizing: border-box;
+}
 
-body {background: #fafafa;}
-
+body {
+ font-family: 'Roboto', sans-serif;
+ background: #fafafa;
+}
 
 .frame {
-  max-width:350px;
-  margin: 50px auto;
-  border-radius: 7px;
-  padding: 30px 50px;
-  background: #C9D6FF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #666666;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+ max-width:350px;
+ margin: 50px auto 20px;
+ border-radius: 7px;
+ padding: 30px 50px;
+ background: #C9D6FF;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ color: #666666;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
 }
 
 h1 {
-  font-weight: 900;
-  letter-spacing: .5px;
-  font-size: 20px;
-  margin: 10px;
+ font-weight: 900;
+ letter-spacing: .5px;
+ font-size: 20px;
+ margin: 10px 0 20px;
 }
 
 .field {
-  width: 210px;
-  padding: 5px;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  resize: none;
-  margin: 5px 0 20px 0;
-  color: #666;
+ width: 210px;
+ padding: 5px;
+ font-size: 16px;
+ border: none;
+ outline: none;
+ resize: none;
+ margin: 8px 0 20px 0;
+ color: #666;
 }
 
 .submit {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 15px;
-  border-radius: 10px;
-  border: none;
-  font-size: 14px;
-  outline: none;
+ display: block;
+ margin: 0 auto;
+ padding: 10px 15px;
+ border-radius: 10px;
+ font-size: 14px;
+ outline: none;
+ cursor: pointer;
+ border: none;
+ background: white;
+}
+
+.clear {
+ box-sizing: border-box;
+ visibility: hidden;
+ float: right;
+ padding: 5px 10px;
+ border-radius: 5px;
+ background: tomato;
+ color: white;
+ margin-right: 20.5%;
+}
+.clear:hover {
   cursor: pointer;
-  border: .5px solid grey;
-  box-shadow: .1px .1px 2px 1px rgba(0,0,0,.1);
-  background: #C9D6FF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(left, #E2E2E2, #C9D6FF);background: -o-linear-gradient(left, #E2E2E2, #C9D6FF);
-  background: linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.clear_display {
+ visibility: visible;
 }
 
 .comments {
-  width: 100%;
-  padding: 20px;
-  bottom: 0px;
-  border-top: .5px solid lightgrey;
+ width: 60%;
+ margin: 0 auto;
+ padding: 20px;
+ border-top: .5px solid lightgrey;
+ margin-top: 55px;
 }
 
 .newClass {
-  margin: 5px 0;
-  border: .5px dashed grey;
-  background: #C9D6FF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  display:flex;
-  justify-content: flex-start;
-  align-items: center;
+ margin: 5px 0;
+ border: .5px dashed grey;
+ display:flex;
+ justify-content: flex-start;
+ align-items: center;
+
+ background: #C9D6FF;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .image {
-  display: inline-block;
-  border-radius: 100%;
-  height: 60px;
-  width: 60px;
-  margin: 10px;
+ display: inline-block;
+ border-radius: 100%;
+ height: 60px;
+ width: 60px;
+ margin: 10px;
+}
+
+.textArea {
+ padding: 15px;
 }
 
 .textArea h2 {
-  line-height: 26px;
+  line-height: 22px;
   color: #6c6c6c;
+  margin-bottom: 8px;
 }
 
-.textArea p {line-height: 10px}
+.textArea p {
+  line-height: 18px;
+}
